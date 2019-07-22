@@ -1,0 +1,62 @@
+Gherkin Scenario
+Feature User should be login so they can enjoy all the account facility
+Scenario User should be successfully login with valid username and password
+Given User is on homepage
+When User types username and password
+And Click on login
+Then User should get message login successfully
+And User can see the mailbox
+
+
+Scenario User should not be login with valid username and invalid password
+Given User is on homepage
+When User type valid username and invalid password
+Then User should get message not logged in 
+And See the error message about invalid password
+
+
+Scenario User should not be login with invalid username and valid password
+Given User is on homepage
+When User type invalid username and valid password
+Then User should get message not logged in 
+And See the error message about invalid username
+
+
+Scenario User should not be login with invalid username and invalid password
+Given User is on homepage
+When User type invalid username and invalid password
+Then User should get message not logged in
+And See the error message about enter the valid username and password
+
+
+Scenario User should not login with valid username and password field empty 
+Given User is on homepage
+When User type the valid username and leave the password field empty
+Then User should get message not logged in
+And See the error message about enter the password
+
+Scenario User should not be login with username field empty and valid password
+Given User is on homepage
+When User leave the username field empty and type valid password
+Then User should get message not logged in
+And See the error message about enter the username
+
+
+Scenario User should not be login with leave username and password field empty
+Given User is on homepage
+When User leave the username and password field empty
+Then User should get message not logged in
+And See the error message about enter the username and password
+
+Scenario User should not be login with invalid username and leave password field empty
+Given User is on homepage
+When User type invalid username 
+Then User should get message not logged in
+And See the error message about enter the username and password
+
+
+Scenario User should not be logged in with leave the username field empty and invalid password
+Given User is on homepage
+When User type invalid password 
+Then User should be message not logged in
+And See the error message about enter the username and password
