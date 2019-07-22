@@ -1,0 +1,7 @@
+Features User should able to register successfully so they can enjoy shopping 
+
+Scenario User should be able to register successfully after filling all required fields 
+Given User navigate Register page
+When User filling all the required fields 
+Then User should successfully click on Register 
+And Get the message Register completed
